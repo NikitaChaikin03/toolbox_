@@ -1,0 +1,7 @@
+%syntax-version=1.0.0
+%project=toolbox
+%uri=https://github.com/sqitchers/sqitch-intro/
+
+0001_settings 2022-09-15T16:26:11Z javascript,,, <javascript@user-ThinkPad-E15-Gen-2> # Initialize pg settings
+0002_toolboxes 2022-09-15T16:26:21Z javascript,,, <javascript@user-ThinkPad-E15-Gen-2> # Initialize toolboxes table
+0003_toolbox_tools 2022-09-15T16:26:27Z javascript,,, <javascript@user-ThinkPad-E15-Gen-2> # Initialize toolbox_tools table

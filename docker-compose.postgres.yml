@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: ./migrations/Dockerfile
+    ports:
+      - 5433:5432
+    volumes:
+      - ./migrations/init_db.sh:/docker-entrypoint-initdb.d/init_db.sh
+      - ./migrations:/db
+    environment:
+      POSTGRES_DB: toolbox
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: postgres

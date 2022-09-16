@@ -1,0 +1,31 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "module": "commonjs",
+    "outDir": "./dist",
+    "types": ["@types/jest"],
+    "typeRoots": [],
+    "paths": {
+      "@libs/ddd": ["libs/ddd/src"],
+      "@libs/exceptions": ["libs/exceptions/src"],
+      "@libs/health": ["libs/health/src"],
+      "@libs/orm": ["libs/orm/src"],
+      "@libs/rest": ["libs/rest/src"],
+      "@typings": ["typings"],
+    },
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictBindCallApply": true,
+    "target": "ES2017"
+  }
+}

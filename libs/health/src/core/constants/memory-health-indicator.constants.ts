@@ -1,0 +1,6 @@
+import { MEGABYTE } from './common.constants';
+
+export const MEMORY_HEALTH_INDICATOR_HEAP_KEY = 'memoryHeap';
+export const MEMORY_HEALTH_INDICATOR_HEAP_THRESHOLD = 500 * MEGABYTE;
+export const MEMORY_HEALTH_INDICATOR_RSS_KEY = 'memoryRSS';
+export const MEMORY_HEALTH_INDICATOR_RSS_THRESOLD = 300 * MEGABYTE;
