@@ -33,7 +33,7 @@ Use **NodeJS** and **Typescript** to create a small service that would feature 2
   - Clean code
   - Grasp
 
-## local application launch
+# Local application launch
 * run docker-compose.postgres.yaml with database and migrations.
   * docker-compose -f ./docker-compose.postgres.yml up -d
 * install dependencies
@@ -42,7 +42,19 @@ Use **NodeJS** and **Typescript** to create a small service that would feature 2
   * printf "APPLICATION_TOOLBOX_PORT=5000 \nAPPLICATION_TOOLBOX_DATABASE_URL=postgres://postgres:postgres@0.0.0.0:5433/toolbox\nNODE_ENV=development" >> .env
 * run app
   * yarn start:dev
+  * local app started on http://localhost:5000/ 
+* request healthcheck
+  * curl localhost:5000/health
+* run tests
+ * yarn test:e2e
 
-## containerised application lauch
+# Containerised application lauch
 * run docker-compose file
   * docker-compose up -d
+  * containerised app started on http://localhost:3000/ 
+
+# Swagger
+* swagger url => /api
+
+## Summary
+* Made .gitkeep in order to show exactly how the code structure will look like if events, handlers appear in the application.
